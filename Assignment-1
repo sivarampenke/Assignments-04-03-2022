@@ -1,0 +1,16 @@
+#program to print the count of duplicate numbers in a list
+l=[]
+rem=0
+n=int(input('enter the no of values you want: '))
+for i in range(n):
+    x=int(input())
+    l.append(x)
+print(l)
+res=[]
+for i in l:
+    if i not in res:
+        res.append(i)
+    else:
+        rem=rem+1
+print('after removing duplicate values: ',res)
+print('no of duplicate values: ',rem)
